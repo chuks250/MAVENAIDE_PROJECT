@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         roboto: ["Roboto", "serif"],
         italiana: ["Italiana", "serif"],
+        bricolageGrotesque: ["Bricolage Grotesque", " serif"],
       },
     },
   },
