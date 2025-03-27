@@ -227,7 +227,7 @@ const Home = () => {
             <p className="text-6xl font-bold ">
               Step by step to earn course certificates
             </p>
-            <p>Follow a guided learning path and get certified with ease</p>
+            <p className="font-normal text-lg">Follow a guided learning path and get certified with ease</p>
           </div>
         </div>
       </div>
