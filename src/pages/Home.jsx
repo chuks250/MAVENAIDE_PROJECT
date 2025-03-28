@@ -1,5 +1,6 @@
 import { EyeIcon } from "lucide-react";
 import { AiOutlineClockCircle } from "react-icons/ai";
+import { ArrowRight } from "lucide-react";
 
 const Home = () => {
   return (
@@ -210,25 +211,183 @@ const Home = () => {
           {/* end */}
         </div>
         {/* virtual_assistance_course_end */}
-        <div className="">
-          {/* heading start */}
-          <div className="flex items-center justify-center space-x-2 text-lg pb-4  ">
-            <p className="capitalize py-3 px-3 border-4 bg-[#201F1F] rounded-full text-[#FFFFFF] text-[16px] font-semibold">
-              browse courses
-            </p>
-          </div>
-          {/* heading end */}
-          <div className="w-[630px] h-[200px]"></div>
-          <div className="flex items-center space-x-2 text-lg pb-4 text-left  ">
+        {/* heading start */}
+        <div className="flex items-center justify-center space-x-2 text-lg pb-4  ">
+          <p className="capitalize py-3 px-3 border-4 bg-[#201F1F] rounded-full text-[#FFFFFF] text-[16px] font-semibold">
+            browse courses
+          </p>
+        </div>
+        {/* heading end */}
+      </div>
+      <div className="grid items-center font-bricolageGrotesque bg-[#F1F7F7] p-20">
+        <div className="w-[600px] h-[200px]">
+          <div className="flex items-center space-x-2 text-lg pb-4 text-left">
             <p className="w-4 h-4 border-4 bg-[#0A4380] border-[#FFC8BC] rounded-full" />
             <p className=" text-[16px] font-medium">How it works</p>
           </div>
           <div className="grid text-left">
-            <p className="text-6xl font-bold ">
+            <p className="text-5xl font-bold ">
               Step by step to earn course certificates
             </p>
-            <p className="font-normal text-lg">Follow a guided learning path and get certified with ease</p>
+            <p className="text-lg font-normal">
+              Follow a guided learning path and get certified with ease
+            </p>
           </div>
+        </div>
+        <div className="grid items-center justify-center grid-cols-2 gap-10 pt-10">
+          {/* start */}
+          <div className="bg-[#D7D4D2] border rounded-3xl p-5 text-left w-[500px] h-[200px]">
+            <p className=" w-[27px] h-[27px] bg-black border rounded-full text-white text-center font-lg font-semibold mt-2">
+              1
+            </p>
+            <p className="capitalize font-bold text-2xl pt-4">
+              sign up & browse courses
+            </p>
+            <p className="text-base font-normal pt-3">
+              Sign up today to gain access to expert led lessons, interactive
+              content, and valuable resources.
+            </p>
+          </div>
+          {/* end */}
+          {/* start */}
+          <div className="bg-[#D7D4D2] border rounded-3xl p-5 text-left w-[500px] h-[200px]">
+            <p className=" w-[27px] h-[27px] bg-black border rounded-full text-white text-center font-lg font-semibold mt-2">
+              2
+            </p>
+            <p className="capitalize font-bold text-2xl pt-4">
+              browse from featured instructor
+            </p>
+            <p className="text-base font-normal pt-3">
+              Learn from industry experts with real world experience. Explore
+              top courses designed to help you succeed.
+            </p>
+          </div>
+          {/* end */}
+          {/* start */}
+          <div className="bg-[#D7D4D2] border rounded-3xl p-5 text-left w-[500px] h-[200px]">
+            <p className=" w-[27px] h-[27px] bg-black border rounded-full text-white text-center font-lg font-semibold mt-2">
+              3
+            </p>
+            <p className="capitalize font-bold text-2xl pt-4">
+              watch & finish course
+            </p>
+            <p className="text-base font-normal pt-3">
+              Learn at your own pace and complete courses to unlock new skills
+              and opportunities.
+            </p>
+          </div>
+          {/* end */}
+          {/* start */}
+          <div className="bg-[#D7D4D2] border rounded-3xl p-5 text-left w-[500px] h-[200px]">
+            <p className=" w-[27px] h-[27px] bg-black border rounded-full text-white text-center font-lg font-semibold mt-2">
+              4
+            </p>
+            <p className="capitalize font-bold text-2xl pt-4">
+              get your certificates
+            </p>
+            <p className="text-base font-normal pt-3">
+              Sign up today to gain access to expert led lessons, interactive
+              content, and valuable resources.
+            </p>
+          </div>
+          {/* end */}
+        </div>
+      </div>
+      <div className="p-20 bg-white">
+        <div className="flex items-end justify-between">
+          <div className="text-left">
+            <h1 className="capitalize text-3xl font-medium">Meet the team</h1>
+            <p className="capitalize text-sm pt-2">
+              the experts behind your success
+            </p>
+          </div>
+          <ArrowRight className="w-[16px] h-[16px]" />
+        </div>
+        <div className="grid md:grid-cols-2 md:gap-10">
+          {/* start */}
+          <div className="bg-[#DCE0E5] w-[500px] h-[200px] p-10 rounded-[40px] mt-20  ">
+            <div className="flex items-center gap-3">
+              <img
+                className="w-[100px] h-[100px] border rounded-[35px]"
+                src="/virtual_assistance_course_img7.jpeg"
+                alt="guy in brown shirt"
+              />
+              <div className="text-left">
+                <h1 className="capitalize text-lg font-semibold">
+                  james herwitz
+                </h1>
+                <p className="text-sm font-normal">
+                  Learn from an experienced professional with real-world
+                  expertise. Gain valuable insights to enhance your skills and
+                  career.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* end */}
+          {/* start */}
+          <div className="bg-[#DCE0E5] w-[500px] h-[200px] p-10 rounded-[40px] mt-20  ">
+            <div className="flex items-center gap-3">
+              <img
+                className="w-[100px] h-[100px] border rounded-[35px]"
+                src="/virtual_assistance_course_img8.jpeg"
+                alt="girl on a flower dress"
+              />
+              <div className="text-left">
+                <h1 className="capitalize text-lg font-semibold">
+                  Gretchen Kenter
+                </h1>
+                <p className="text-sm font-normal">
+                  Learn from an experienced professional with real-world
+                  expertise. Gain valuable insights to enhance your skills and
+                  career.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* end */}
+          {/* start */}
+          <div className="bg-[#DCE0E5] w-[500px] h-[200px] p-10 rounded-[40px] mt-2  ">
+            <div className="flex items-center gap-3">
+              <img
+                className="w-[100px] h-[100px] border rounded-[35px]"
+                src="/virtual_assistance_course_img5.jpeg"
+                alt="a black woman"
+              />
+              <div className="text-left">
+                <h1 className="capitalize text-lg font-semibold">
+                  Gretchen Kenter
+                </h1>
+                <p className="text-sm font-normal">
+                  Learn from an experienced professional with real-world
+                  expertise. Gain valuable insights to enhance your skills and
+                  career.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* end */}
+          {/* start */}
+          <div className="bg-[#DCE0E5] w-[500px] h-[200px] p-10 rounded-[40px] mt-2  ">
+            <div className="flex items-center gap-3">
+              <img
+                className="w-[100px] h-[100px] border rounded-[35px]"
+                src="/virtual_assistance_course_img6.jpeg"
+                alt="mustache guy on headphone"
+              />
+              <div className="text-left">
+                <h1 className="capitalize text-lg font-semibold">
+                  Gretchen Kenter
+                </h1>
+                <p className="text-sm font-normal">
+                  Learn from an experienced professional with real-world
+                  expertise. Gain valuable insights to enhance your skills and
+                  career.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* end */}
         </div>
       </div>
     </div>
