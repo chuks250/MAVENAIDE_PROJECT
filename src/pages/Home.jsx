@@ -1,87 +1,48 @@
-import { EyeIcon } from "lucide-react";
+import { Circle, CircleAlert, EyeIcon } from "lucide-react";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { ArrowRight } from "lucide-react";
+import Button from "../components/r.components/Button";
 
 const Home = () => {
   return (
     // header start
-    <div className="grid text-center bg-[#D1E5E4]">
-      <div className="font-bricolageGrotesque">
-        <p className="text-6xl font-bold">Our business is taking care</p>
-        <p className="text-8xl font-extrabold">of your business.</p>
-      </div>
-      <div className="flex items-center justify-center -mt-[160px]">
-        <img
-          className="w-[1091px] h-[1091px] object-cover"
-          src="/ladyinsuit.png"
-          alt="Lady in suit"
-        />
-      </div>
-      <div className="flex pb-28 p-5 bg-[#FFFFFF] justify-between place-items-center">
-        <div className="text-left h-[128px] p-5">
-          <h1 className="capitalize text-black text-6xl text-left font-bricolageGrotesque">
-            <span className="text-gray-500"> seamless</span> virtual assistance
-            for productivity.
+    <div className="grid text-center bg-[#F3F5F4] overscroll-auto ">
+      <div className="flex justify-between items-center p-10 pb-0">
+        <div className="grid w-[500px] h-[200px] font-bricolageGrotesque">
+          <h1 className="capitalize font-bold text-5xl text-left">
+            learn. work. earn
           </h1>
-        </div>
-      </div>
-      <div className="flex items-center bg-[#FFFFFF] justify-center gap-10 pb-14">
-        <img
-          className="rounded-full p-3 w-[350px] h-[650px] object-cover border-2 bg-[#D1E5E4]"
-          src="./virtual_assistant1.jpeg"
-          alt="owl_pics"
-        />
-        {/* header end */}
-        <div className="w-[800px] H-[128px] text-left font-bricolageGrotesque p-10">
-          <div className="w-[700px] h-[2px] bg-gray-600" />
-          <p className="text-[20px] pt-10">
-            MavenAide Virtual Assistant Agency offers professional virtual
-            assistant services and training. Services like administrative
-            support, project management and customer service excellence are
-            delivered to corporate businesses and entrpreneurs.
+          <h2 className="capitalize font-medium text-2xl text-left pt-3">
+            become a certified virtual assistant
+          </h2>
+          <p className=" font-medium text-xl text-left pt-3 ">
+            Master admin support, client management, AI tools & more all at your
+            pace, on any device.
           </p>
-          <div className="grid uppercase font-medium text-[12px] items-center lg:grid-cols-2 pt-20">
-            {/* start */}
-            <div>
-              <div className="flex items-center space-x-2 pb-2">
-                <div className="w-3 h-3 bg-slate-100 border border-black rounded-full"></div>
-                <span>virtual assistant training</span>
-              </div>
-              <div className="w-[290px] h-[2px] bg-gray-600" />
-            </div>
-            {/* end */}
-            {/* start */}
-            <div>
-              <div className="flex items-center space-x-2 pb-2">
-                <div className="w-3 h-3 bg-slate-100 border border-black rounded-full"></div>
-                <span>certification</span>
-              </div>
-              <div className="w-[290px] h-[2px] bg-gray-600" />
-            </div>
-            {/* end */}
-            {/* start */}
-            <div className="pt-5">
-              <div className="flex items-center space-x-2 pb-2">
-                <div className="w-3 h-3 bg-slate-100 border border-black rounded-full"></div>
-                <span>virtual assistant services</span>
-              </div>
-              <div className="w-[290px] h-[2px] bg-gray-600" />
-            </div>
-            {/* end */}
-            {/* start */}
-            <div className="pt-5">
-              <div className="flex items-center space-x-2 pb-2">
-                <div className="w-3 h-3 bg-slate-100 border border-black rounded-full"></div>
-                <span>executive assistant</span>
-              </div>
-              <div className="w-[290px] h-[2px] bg-gray-600" />
-            </div>
-            {/* end */}
+          <div className="flex gap-2 pt-4">
+            <Button
+              btnText="browse courses"
+              btnStyle="bg-[#BCCECD] rounded-2xl text-sm text-center w-[160px] capitalize h-[50px] px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-600 hover:text-white hover:border-white"
+            />
+            <Button
+              btnText="get certified"
+              btnStyle="bg-[#BCCECD] rounded-2xl text-sm text-center w-[140px] capitalize h-[50px] px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-600 hover:transition-all hover:text-white hover:border-white"
+            />
+          </div>
+        </div>
+        <div className=" grid place-items-center">
+          <div className="flex justify-self-center w-[450px] h-[450px] bg-red-600 rounded-full" />
+          <div className="flex items-center justify-center -mt-[500px]">
+            <img
+              className="w-[550px] h-[550px] object-cover"
+              src="/ladyinsuit.png"
+              alt="Lady in suit"
+            />
           </div>
         </div>
       </div>
       {/* virtual_assistance_course_start */}
-      <div className="grid items-center font-bricolageGrotesque bg-[#F1F7F7] pt-16">
+      <div className="grid items-center font-bricolageGrotesque bg-[#FAFCFC] pt-16">
         <div className="flex items-center justify-center space-x-2 text-lg pb-4  ">
           <p className="w-4 h-4 border-4 bg-[#0A4380] border-[#FFC8BC] rounded-full" />
           <p className="capitalize text-[16px] font-medium">
@@ -96,11 +57,11 @@ const Home = () => {
         </div>
         <div className="grid lg:grid-cols-3 mt-32 mb-20 p-5">
           {/* start*/}
-          <div className="lg:w-[370px] lg:h-[450px] m-auto p-auto p-2 grid items-center justify-center bg-[#FFFFFF] border rounded-2xl ">
+          <div className="lg:w-[370px] lg:h-[500px] m-auto p-auto p-2 grid items-center justify-center bg-[#FFFFFF] border rounded-2xl mb-10">
             <img
               className="border lg:w-[350px] lg:h-[256px] rounded-2xl object-cover"
               src="./virtual_assistance_course_img1.jpeg"
-              alt="Lady typing on the system smiling"
+              alt="smiling lady typing on the system"
             />
             <div className="text-left p-2">
               <h1 className="capitalize text-lg font-semibold ">
@@ -131,10 +92,17 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <Button
+              btnText={"start learning"}
+              btnStyle={
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4]"
+              }
+              btnFunc={() => navigate("/log-in")}
+            />
           </div>
           {/* end */}
           {/* start*/}
-          <div className="lg:w-[370px] lg:h-[450px] m-auto p-auto p-2 grid items-center justify-center bg-[#FFFFFF] border rounded-2xl ">
+          <div className="lg:w-[370px] lg:h-[500px] m-auto p-auto p-2 grid items-center justify-center bg-[#FFFFFF] border rounded-2xl mb-10">
             <img
               className="border lg:w-[350px] lg:h-[256px] rounded-2xl object-cover"
               src="./virtual_assistance_course_img2.jpeg"
@@ -169,10 +137,17 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <Button
+              btnText={"start learning"}
+              btnStyle={
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4]"
+              }
+              btnFunc={() => navigate("/log-in")}
+            />
           </div>
           {/* end */}
           {/* start*/}
-          <div className="lg:w-[370px] lg:h-[450px] m-auto p-auto p-2 grid items-center justify-center bg-[#FFFFFF] border rounded-2xl ">
+          <div className="lg:w-[370px] lg:h-[500px] m-auto p-auto p-2 grid items-center justify-center bg-[#FFFFFF] border rounded-2xl mb-10">
             <img
               className="border lg:w-[350px] lg:h-[256px] rounded-2xl object-cover"
               src="./virtual_assistance_course_img3.jpeg"
@@ -184,7 +159,7 @@ const Home = () => {
               </h1>
               <p className="text-[14px] font-normal pt-2">
                 Problem-solving, emotional intelligence, and customer retention
-                techniques to help businesses
+                techniques to help businesses.
               </p>
             </div>
             <div className="flex items-center justify-between ">
@@ -207,36 +182,182 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <Button
+              btnText={"start learning"}
+              btnStyle={
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4]"
+              }
+              btnFunc={() => navigate("/log-in")}
+            />
+          </div>
+          {/* end */}
+          {/* start*/}
+          <div className="lg:w-[370px] lg:h-[500px] m-auto p-auto p-2 grid items-center justify-center bg-[#FFFFFF] border rounded-2xl ">
+            <img
+              className="border lg:w-[350px] lg:h-[256px] rounded-2xl object-cover"
+              src="./virtual_assistance_course_img3.jpeg"
+              alt="Lady typing on the system smiling"
+            />
+            <div className="text-left p-2">
+              <h1 className="capitalize text-lg font-semibold ">
+                customer service
+              </h1>
+              <p className="text-[14px] font-normal pt-2">
+                Problem-solving, emotional intelligence, and customer retention
+                techniques to help businesses.
+              </p>
+            </div>
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center space-x-2 pl-3">
+                <img
+                  className="lg:w-[40px] lg:h-[40px] border rounded-full object-fill"
+                  src="./virtual_assistance_course_img6.jpeg"
+                  alt="lady sitting on the chair"
+                />
+                <p className="font-semibold text-[14px]">Steven Wise</p>
+              </div>
+              <div className="flex items-center space-x-3 pr-5">
+                <p className="flex justify-start items-center gap-1 text-[14px] font-normal">
+                  <EyeIcon className="w-[16px] h-[16px]" />
+                  2.4k
+                </p>
+                <p className="flex justify-start items-center gap-1 text-[14px] font-normal">
+                  <AiOutlineClockCircle className="w-[14px] h-[14px]" />
+                  15.56
+                </p>
+              </div>
+            </div>
+            <Button
+              btnText={"start learning"}
+              btnStyle={
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:transition-all hover: hover:border-[#D1E5E4]"
+              }
+              btnFunc={() => navigate("/log-in")}
+            />
+          </div>
+          {/* end */}
+          {/* start*/}
+          <div className="lg:w-[370px] lg:h-[500px] m-auto p-auto p-2 grid items-center justify-center bg-[#FFFFFF] border rounded-2xl ">
+            <img
+              className="border lg:w-[350px] lg:h-[256px] rounded-2xl object-cover"
+              src="./virtual_assistance_course_img3.jpeg"
+              alt="Lady typing on the system smiling"
+            />
+            <div className="text-left p-2">
+              <h1 className="capitalize text-lg font-semibold ">
+                customer service
+              </h1>
+              <p className="text-[14px] font-normal pt-2">
+                Problem-solving, emotional intelligence, and customer retention
+                techniques to help businesses.
+              </p>
+            </div>
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center space-x-2 pl-3">
+                <img
+                  className="lg:w-[40px] lg:h-[40px] border rounded-full object-fill"
+                  src="./virtual_assistance_course_img6.jpeg"
+                  alt="lady sitting on the chair"
+                />
+                <p className="font-semibold text-[14px]">Steven Wise</p>
+              </div>
+              <div className="flex items-center space-x-3 pr-5">
+                <p className="flex justify-start items-center gap-1 text-[14px] font-normal">
+                  <EyeIcon className="w-[16px] h-[16px]" />
+                  2.4k
+                </p>
+                <p className="flex justify-start items-center gap-1 text-[14px] font-normal">
+                  <AiOutlineClockCircle className="w-[14px] h-[14px]" />
+                  15.56
+                </p>
+              </div>
+            </div>
+            <Button
+              btnText={"start learning"}
+              btnStyle={
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4]"
+              }
+              btnFunc={() => navigate("/log-in")}
+            />
+          </div>
+          {/* end */}
+          {/* start*/}
+          <div className="lg:w-[370px] lg:h-[500px] m-auto p-auto p-2 grid items-center justify-center bg-[#FFFFFF] border rounded-2xl ">
+            <img
+              className="border lg:w-[350px] lg:h-[256px] rounded-2xl object-cover"
+              src="./virtual_assistance_course_img3.jpeg"
+              alt="Lady typing on the system smiling"
+            />
+            <div className="text-left p-2">
+              <h1 className="capitalize text-lg font-semibold ">
+                customer service
+              </h1>
+              <p className="text-[14px] font-normal pt-2">
+                Problem-solving, emotional intelligence, and customer retention
+                techniques to help businesses.
+              </p>
+            </div>
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center space-x-2 pl-3">
+                <img
+                  className="lg:w-[40px] lg:h-[40px] border rounded-full object-fill"
+                  src="./virtual_assistance_course_img6.jpeg"
+                  alt="lady sitting on the chair"
+                />
+                <p className="font-semibold text-[14px]">Steven Wise</p>
+              </div>
+              <div className="flex items-center space-x-3 pr-5">
+                <p className="flex justify-start items-center gap-1 text-[14px] font-normal">
+                  <EyeIcon className="w-[16px] h-[16px]" />
+                  2.4k
+                </p>
+                <p className="flex justify-start items-center gap-1 text-[14px] font-normal">
+                  <AiOutlineClockCircle className="w-[14px] h-[14px]" />
+                  15.56
+                </p>
+              </div>
+            </div>
+            <Button
+              btnText={"start learning"}
+              btnStyle={
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover: hover:border-[#D1E5E4]"
+              }
+              btnFunc={() => navigate("/log-in")}
+            />
           </div>
           {/* end */}
         </div>
         {/* virtual_assistance_course_end */}
         {/* heading start */}
-        <div className="flex items-center justify-center space-x-2 text-lg pb-4  ">
-          <p className="capitalize py-3 px-3 border-4 bg-[#201F1F] rounded-full text-[#FFFFFF] text-[16px] font-semibold">
-            browse courses
-          </p>
-        </div>
-        {/* heading end */}
-      </div>
-      <div className="grid items-center font-bricolageGrotesque bg-[#F1F7F7] p-20">
-        <div className="w-[600px] h-[200px]">
-          <div className="flex items-center space-x-2 text-lg pb-4 text-left">
-            <p className="w-4 h-4 border-4 bg-[#0A4380] border-[#FFC8BC] rounded-full" />
-            <p className=" text-[16px] font-medium">How it works</p>
-          </div>
-          <div className="grid text-left">
-            <p className="text-5xl font-bold ">
-              Step by step to earn course certificates
-            </p>
-            <p className="text-lg font-normal">
-              Follow a guided learning path and get certified with ease
+        <div className="grid place-items-center">
+          <div className="flex items-center justify-center space-x-2 text-lg pb-4">
+            <p className="capitalize py-3 px-3 bg-[#201F1F] rounded-full text-[#FFFFFF] text-[16px] font-semibold cursor-pointer">
+              browse courses
             </p>
           </div>
+          {/* heading end */}
         </div>
-        <div className="grid items-center justify-center grid-cols-2 gap-10 pt-10">
+        <div className="grid place-items-center font-bricolageGrotesque bg-[#FFFFFF] p-20">
+          <div className="w-[600px] h-[200px] grid place-items-center">
+            <div className="flex items-center  space-x-2 text-lg pb-4">
+              <p className="w-4 h-4 border-2 bg-[#0A4380] border-[#FFC8BC] rounded-full" />
+
+              <p className=" text-[16px] font-medium">How it works</p>
+            </div>
+            <div className="grid text-center">
+              <p className="text-5xl font-bold ">
+                Step by step to earn course certificates
+              </p>
+              <p className="mt-4 text-lg font-normal">
+                Follow a guided learning path and get certified with ease
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid place-items-center grid-cols-2 gap-10 pt-2">
           {/* start */}
-          <div className="bg-[#D7D4D2] border rounded-3xl p-5 text-left w-[500px] h-[200px]">
+          <div className="border-4 shadow-lg border-black rounded-3xl p-5 text-left w-[500px] h-[200px] cursor-pointer">
             <p className=" w-[27px] h-[27px] bg-black border rounded-full text-white text-center font-lg font-semibold mt-2">
               1
             </p>
@@ -250,7 +371,7 @@ const Home = () => {
           </div>
           {/* end */}
           {/* start */}
-          <div className="bg-[#D7D4D2] border rounded-3xl p-5 text-left w-[500px] h-[200px]">
+          <div className="border-4 shadow-lg border-black  rounded-3xl p-5 text-left w-[500px] h-[200px] cursor-pointer">
             <p className=" w-[27px] h-[27px] bg-black border rounded-full text-white text-center font-lg font-semibold mt-2">
               2
             </p>
@@ -264,7 +385,7 @@ const Home = () => {
           </div>
           {/* end */}
           {/* start */}
-          <div className="bg-[#D7D4D2] border rounded-3xl p-5 text-left w-[500px] h-[200px]">
+          <div className="border-4 shadow-lg border-black  rounded-3xl p-5 text-left w-[500px] h-[200px] cursor-pointer">
             <p className=" w-[27px] h-[27px] bg-black border rounded-full text-white text-center font-lg font-semibold mt-2">
               3
             </p>
@@ -278,7 +399,7 @@ const Home = () => {
           </div>
           {/* end */}
           {/* start */}
-          <div className="bg-[#D7D4D2] border rounded-3xl p-5 text-left w-[500px] h-[200px]">
+          <div className="border-4 shadow-lg border-black  rounded-3xl p-5 text-left w-[500px] h-[200px] cursor-pointer">
             <p className=" w-[27px] h-[27px] bg-black border rounded-full text-white text-center font-lg font-semibold mt-2">
               4
             </p>
@@ -291,6 +412,26 @@ const Home = () => {
             </p>
           </div>
           {/* end */}
+        </div>
+      </div>
+      <div className="flex pt-20 pb-10 justify-evenly bg-[#FAFCFC] ">
+        <div className="grid w-[300px] p-2">
+          <h1 className="font-bricolageGrotesque font-extrabold text-5xl text-left capitalize">
+            get hired, today!
+          </h1>
+          <p className="font-bricolageGrotesque pt-[20px] font-medium text-lg text-left">
+            Oportunities are waiting take the first step now.
+          </p>
+          <Button
+            btnText="start now"
+            btnStyle="grid place-content-center w-32 h-14 text-lg capitalize font-medium text-center rounded-2xl cursor-pointer bg-[#FE1919] text-slate-100 font-bricolageGrotesque"
+          />
+        </div>
+        <div className="w-[400px] h-[300px]">
+          <img
+            src="/guy_sitting _on_computer.png"
+            alt="guy sitting on computer"
+          />
         </div>
       </div>
       <div className="p-20 bg-white">
@@ -356,7 +497,7 @@ const Home = () => {
               />
               <div className="text-left">
                 <h1 className="capitalize text-lg font-semibold">
-                  Gretchen Kenter
+                  Rayna George
                 </h1>
                 <p className="text-sm font-normal">
                   Learn from an experienced professional with real-world
@@ -377,7 +518,7 @@ const Home = () => {
               />
               <div className="text-left">
                 <h1 className="capitalize text-lg font-semibold">
-                  Gretchen Kenter
+                  Justin Baptista
                 </h1>
                 <p className="text-sm font-normal">
                   Learn from an experienced professional with real-world

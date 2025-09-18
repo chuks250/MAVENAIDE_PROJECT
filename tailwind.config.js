@@ -7,8 +7,11 @@ export default {
         roboto: ["Roboto", "serif"],
         italiana: ["Italiana", "serif"],
         bricolageGrotesque: ["Bricolage Grotesque", " serif"],
+        nunito:["Nunito","italic"],
+        inter:["Inter","italic"],
       },
     },
   },
+
   plugins: [],
 };
