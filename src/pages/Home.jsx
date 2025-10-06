@@ -1,7 +1,8 @@
-import { Circle, CircleAlert, EyeIcon } from "lucide-react";
+import { EyeIcon, SearchIcon } from "lucide-react";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { ArrowRight } from "lucide-react";
 import Button from "../components/r.components/Button";
+import { FaChevronDown } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -54,6 +55,87 @@ const Home = () => {
           <p className="capitalize text-[15px] font-normal">
             unlock new skills, elevate your career and achieve more
           </p>
+        </div>
+        <div className="grid w-[1200px] justify-self-center">
+          <div className="flex items-center justify-center gap-5 pt-10 font-bricolageGrotesque">
+            {/* start */}
+            <div className="w-[130px]">
+              <p className="capitalize py-3 px-3 rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px]  font-bold cursor-pointer">
+                all courses
+              </p>
+            </div>
+            {/* end */}
+            {/* start */}
+            <div className="w-[200px]">
+              <p className="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer">
+                project management
+              </p>
+            </div>
+            {/* end */}
+            {/* start */}
+            <div className="w-[220px]">
+              <p className="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer">
+                administrative support
+              </p>
+            </div>
+            {/* end */}
+            {/* start */}
+            <div className="w-[200px]">
+              <p className="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer">
+                customer service
+              </p>
+            </div>
+            {/* end */}
+            {/* start */}
+            <div className="w-[220px]">
+              <p className="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer">
+                administrative support
+              </p>
+            </div>
+            {/* end */}
+          </div>
+          <div className="flex justify-center gap-x-5">
+            {/* start */}
+            <div className="grid">
+              <p className="capitalize text-left pt-10 pb-5 text-[#14121999] font-medium text-[20px] cursor-pointer">
+                levels
+              </p>
+              <p className="flex justify-center text-left capitalize py-3 px-10 rounded-full border-2 text-black text-[16px] gap-20 font-bold cursor-pointer">
+                beginner <FaChevronDown />
+              </p>
+            </div>
+            {/* end */}
+            {/* start */}
+            <div className="grid">
+              <p className="capitalize text-left pt-10 pb-5 text-[#14121999] font-medium text-[20px] cursor-pointer">
+                duration
+              </p>
+              <p className="flex justify-center text-left capitalize py-3 px-10 rounded-full border-2 text-black text-[16px] gap-20 font-bold cursor-pointer">
+                short <FaChevronDown />
+              </p>
+            </div>
+            {/* end */}
+            {/* start */}
+            <div className="grid">
+              <p className="capitalize text-left pt-10 pb-5 text-[#14121999] font-medium text-[20px] cursor-pointer">
+                pricing
+              </p>
+              <p className="flex justify-center text-left capitalize py-3 px-10 rounded-full border-2 text-black text-[16px] gap-20 font-bold cursor-pointer">
+                free <FaChevronDown />
+              </p>
+            </div>
+            {/* end */}
+            {/* start */}
+            <div className="grid mx-20">
+              <p className="capitalize text-left pt-10 pb-5 text-[#14121999] font-medium text-[20px] cursor-pointer">
+                search
+              </p>
+              <p className="flex justify-center text-left capitalize py-3 px-10 gap-4 rounded-full border-2 text-black text-[16px] font-bold cursor-pointer">
+                <SearchIcon /> all courses
+              </p>
+            </div>
+            {/* end */}
+          </div>
         </div>
         <div className="grid lg:grid-cols-3 mt-32 mb-20 p-5">
           {/* start*/}
@@ -354,7 +436,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <div className="grid place-items-center grid-cols-2 gap-10 pt-2">
           {/* start */}
           <div className="border-4 shadow-lg border-black rounded-3xl p-5 text-left w-[500px] h-[200px] cursor-pointer">

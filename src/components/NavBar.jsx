@@ -1,7 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import Button from "./r.components/Button";
-import { BarChart3Icon} from "lucide-react";
 import { BsCart3 } from "react-icons/bs";
+import { SearchIcon } from "lucide-react";
+import { FaChevronDown } from "react-icons/fa6";
 
 const links = [
   { path: "/", label: "Home" },
@@ -23,19 +24,30 @@ const NavBar = () => {
             maven<p className="text-red-700">Aide</p>
           </span>
         </Link>
-        <ul className="flex items-center justify-between gap-10 font-serif text-lg">
+        <div className="flex font-bricolageGrotesque items-center">
+          <p className="flex text-end capitalize py-3 px-10 gap-2 text-[#0000007A] text-[20px] font-normal cursor-pointer">
+            explore <FaChevronDown className="grid items-baseline" />
+          </p>
+          <div className="flex justify-center">
+            <p className="text-left capitalize py-3 px-64 rounded-full border-2 text-black text-[16px] font-bold cursor-pointer gap-2">
+              <SearchIcon classname="w-[14px] h-[14px]" />
+            </p>
+          </div>
+        </div>
+        {/* <ul className="flex items-center justify-between gap-10 font-serif text-lg">
           {links.map((link, index) => (
             <li key={index}>
               <Link to={link.path}>{link.label}</Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
         <div
           className="flex
-        items-center gap-2 font-semibold">
-          <BarChart3Icon className="w-[14px] h-[14px] text-green-400"/>
+        items-center gap-2 font-semibold"
+        >
+          <BsCart3 className="cursor-pointer w-5 h-5" />
           <Button
-            btnText={"Login In"}
+            btnText={"Login"}
             btnStyle={
               "rounded-full px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-700 hover:text-white hover:border-white"
             }
