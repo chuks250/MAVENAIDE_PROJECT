@@ -33,6 +33,7 @@ const NavBar = () => {
               <SearchIcon classname="w-[14px] h-[14px]" />
             </p>
           </div>
+          {/* NOT DONE NEEDS FEW TOUCHES */}
         </div>
         {/* <ul className="flex items-center justify-between gap-10 font-serif text-lg">
           {links.map((link, index) => (
