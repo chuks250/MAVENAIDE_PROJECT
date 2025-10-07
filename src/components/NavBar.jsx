@@ -26,6 +26,7 @@ const NavBar = () => {
         </Link>
         <div className="flex font-bricolageGrotesque items-center">
           <p className="flex text-end capitalize py-3 px-10 gap-2 text-[#0000007A] text-[20px] font-normal cursor-pointer">
+            <p className="flex gap-5"></p>
             explore <FaChevronDown className="grid items-baseline" />
           </p>
           <div className="flex justify-center">
@@ -50,7 +51,7 @@ const NavBar = () => {
           <Button
             btnText={"Login"}
             btnStyle={
-              "rounded-full px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-700 hover:text-white hover:border-white"
+              "rounded-full px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-700 hover:text-white hover:border-white transition-all duration-300"
             }
             btnFunc={() => navigate("/log-in")}
           />
@@ -58,7 +59,7 @@ const NavBar = () => {
           <Button
             btnText={"Get Started"}
             btnStyle={
-              "rounded-full px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-700 hover:text-white hover:border-white"
+              "rounded-full px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-700 hover:text-white hover:border-white  transition-all duration-300"
             }
             btnFunc={() => navigate("/get-started")}
           />

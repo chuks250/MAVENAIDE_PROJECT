@@ -23,11 +23,11 @@ const Home = () => {
           <div className="flex gap-2 pt-4">
             <Button
               btnText="browse courses"
-              btnStyle="bg-[#BCCECD] rounded-2xl text-sm text-center w-[160px] capitalize h-[50px] px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-600 hover:text-white hover:border-white"
+              btnStyle="bg-[#BCCECD] rounded-2xl text-sm text-center w-[160px] capitalize h-[50px] px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-600 hover:text-white hover:border-white transition-all duration-300"
             />
             <Button
               btnText="get certified"
-              btnStyle="bg-[#BCCECD] rounded-2xl text-sm text-center w-[140px] capitalize h-[50px] px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-600 hover:transition-all hover:text-white hover:border-white"
+              btnStyle="bg-[#BCCECD] rounded-2xl text-sm text-center w-[140px] capitalize h-[50px] px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-600 hover:transition-all hover:text-white hover:border-white transition-all duration-300"
             />
           </div>
         </div>
@@ -60,37 +60,42 @@ const Home = () => {
           <div className="flex items-center justify-center gap-5 pt-10 font-bricolageGrotesque">
             {/* start */}
             <div className="w-[130px]">
-              <p className="capitalize py-3 px-3 rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px]  font-bold cursor-pointer">
-                all courses
-              </p>
+              <Button
+                btnText="all courses"
+                btnStyle="capitalize py-3 px-3 rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px]  font-bold cursor-pointer transition-all duration-300"
+              />
             </div>
             {/* end */}
             {/* start */}
             <div className="w-[200px]">
-              <p className="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer">
-                project management
-              </p>
+              <Button
+                btnText="project management"
+                btnStyle="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer transition-all duration-300"
+              />
             </div>
             {/* end */}
             {/* start */}
             <div className="w-[220px]">
-              <p className="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer">
-                administrative support
-              </p>
+              <Button
+                btnText="administrative support"
+                btnStyle="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer transition-all duration-300"
+              />
             </div>
             {/* end */}
             {/* start */}
             <div className="w-[200px]">
-              <p className="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer">
-                customer service
-              </p>
+              <Button
+                btnText="customer service"
+                btnStyle="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer transition-all duration-300"
+              />
             </div>
             {/* end */}
             {/* start */}
             <div className="w-[220px]">
-              <p className="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer">
-                administrative support
-              </p>
+              <Button
+                btnText="administrative support"
+                btnStyle="flex justify-center capitalize py-3 px-3 text-center rounded-full border-2 hover:text-white hover:bg-[#495050] text-black text-[16px] font-bold cursor-pointer"
+              />
             </div>
             {/* end */}
           </div>
@@ -175,9 +180,9 @@ const Home = () => {
               </div>
             </div>
             <Button
-              btnText={"start learning"}
+              btnText="start learning"
               btnStyle={
-                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4]"
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4]  transition-all duration-300"
               }
               btnFunc={() => navigate("/log-in")}
             />
@@ -222,7 +227,7 @@ const Home = () => {
             <Button
               btnText={"start learning"}
               btnStyle={
-                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4]"
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4] transition-all duration-300"
               }
               btnFunc={() => navigate("/log-in")}
             />
@@ -267,7 +272,7 @@ const Home = () => {
             <Button
               btnText={"start learning"}
               btnStyle={
-                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4]"
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4] transition-all duration-300"
               }
               btnFunc={() => navigate("/log-in")}
             />
@@ -312,7 +317,7 @@ const Home = () => {
             <Button
               btnText={"start learning"}
               btnStyle={
-                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:transition-all hover: hover:border-[#D1E5E4]"
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:transition-all hover: hover:border-[#D1E5E4] transition-all duration-300"
               }
               btnFunc={() => navigate("/log-in")}
             />
@@ -357,7 +362,7 @@ const Home = () => {
             <Button
               btnText={"start learning"}
               btnStyle={
-                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4]"
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover:border-[#D1E5E4] transition-all duration-300"
               }
               btnFunc={() => navigate("/log-in")}
             />
@@ -402,7 +407,7 @@ const Home = () => {
             <Button
               btnText={"start learning"}
               btnStyle={
-                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover: hover:border-[#D1E5E4]"
+                "capitalize rounded-xl px-5 py-3 cursor-pointer border-2 border-black hover:bg-[#D1E5E4] hover: hover:border-[#D1E5E4] transition-all duration-300"
               }
               btnFunc={() => navigate("/log-in")}
             />
@@ -413,7 +418,7 @@ const Home = () => {
         {/* heading start */}
         <div className="grid place-items-center">
           <div className="flex items-center justify-center space-x-2 text-lg pb-4">
-            <p className="capitalize py-3 px-3 bg-[#201F1F] rounded-full text-[#FFFFFF] text-[16px] font-semibold cursor-pointer">
+            <p className="capitalize py-3 px-3 bg-[#201F1F] rounded-full text-[#FFFFFF] text-[16px] font-semibold">
               browse courses
             </p>
           </div>
