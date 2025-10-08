@@ -25,14 +25,17 @@ const NavBar = () => {
           </span>
         </Link>
         <div className="flex font-bricolageGrotesque items-center">
-          <p className="flex text-end capitalize py-3 px-10 gap-2 text-[#0000007A] text-[20px] font-normal cursor-pointer">
+          <p className="flex items-center text-end capitalize py-3 px-10 gap-2 text-[#0000007A] text-[20px] font-normal cursor-pointer">
             <p className="flex gap-5"></p>
-            explore <FaChevronDown className="grid items-baseline" />
+            explore <FaChevronDown className="text-xs" />
           </p>
-          <div className="flex justify-center">
-            <p className="text-left capitalize py-3 px-64 rounded-full border-2 text-black text-[16px] font-bold cursor-pointer gap-2">
-              <SearchIcon classname="w-[14px] h-[14px]" />
-            </p>
+          <div className="flex">
+            <Button
+              // btnText={<SearchIcon classname="text-[10px]" />}
+              btnStyle={
+                "text-left capitalize py-5 px-64 rounded-full border-2 border-black text-black text-[16px] font-bold cursor-pointer gap-2"
+              }
+            />
           </div>
           {/* NOT DONE NEEDS FEW TOUCHES */}
         </div>
@@ -49,7 +52,7 @@ const NavBar = () => {
         >
           <BsCart3 className="cursor-pointer w-5 h-5" />
           <Button
-            btnText={"Login"}
+            btnText="Login"
             btnStyle={
               "rounded-full px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-700 hover:text-white hover:border-white transition-all duration-300"
             }
@@ -57,7 +60,7 @@ const NavBar = () => {
           />
 
           <Button
-            btnText={"Get Started"}
+            btnText="Get Started"
             btnStyle={
               "rounded-full px-5 py-3 cursor-pointer border-2 border-black hover:bg-red-700 hover:text-white hover:border-white  transition-all duration-300"
             }
